@@ -29,14 +29,6 @@ App (Abs "x" (Var "x")) (CInt 1)   -- (lambda x. x) 1
 LetIn "x" (CInt 1) (Var "x")       -- let x = 1 in x
 ```
 
-## Core Concepts
-
-- **Typing Environment (`Env`)** – Maps variable identifiers to types.  
-- **Constraints (`ConstraintSet`)** – Represents type relationships that must be unified.  
-- **Substitution (`Substitution`)** – Maps type variables to concrete types.  
-- **Unification** – Produces the most general substitution satisfying all constraints.  
-- **Type Inference Monad (`InferState`)** – Manages the generation of fresh type variables.  
-
 ## To Run
 
 ```bash
